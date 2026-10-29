@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Tayyaba Zubaid</title>
+    <meta name="description" content="About Tayyaba Zubaid, frontend engineer and CS student.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="about">
+    <!-- Shared HUD navbar -->
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a href="index.html" class="logo"><span class="hearts"
+                    aria-hidden="true"><i></i><i></i><i></i></span>Tayyaba Zubaid</a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"
+                aria-controls="nav-links"><span></span><span></span><span></span></button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" data-nav="home">Home</a></li>
+                <li><a href="about.html" data-nav="about">About</a></li>
+                <li><a href="skills.html" data-nav="skills">Skills</a></li>
+                <li><a href="projects.html" data-nav="projects">Projects</a></li>
+                <li><a href="contact.html" data-nav="contact">Contact</a></li>
+                <li class="hud-coins" title="Coins collected"><span class="coin-icon" aria-hidden="true"></span><span
+                        id="coin-count" aria-live="polite">0</span></li>
+                <li><a href="assets/Tayyaba_Zubaid_CV.pdf" class="btn btn-small" download>Download CV</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section container about">
+            <div class="about-visual">
+                <div class="photo-blob" aria-hidden="true"></div>
+                <div class="photo-frame"><span class="photo-initials" aria-hidden="true">TZ</span><img
+                        src="assets/profile.png" alt="Portrait of Tayyaba Zubaid"></div>
+                <span class="exp-badge">2+ Years</span>
+            </div>
+            <div class="about-text">
+                <p class="label">About Me</p>
+                <h1>Who I am?</h1>
+                <p>I'm a Computer Science student at Qarshi University and a Frontend Engineer who completed an
+                    internship at FlyRank (July 2026 &ndash; Oct 2026) on the AI-assisted software development track.
+                    There I built and deployed a role-based full-stack app with React, Node.js, Express and JWT
+                    authentication.</p>
+                <p>I like clear, accessible interfaces and solid fundamentals: data structures, algorithms and
+                    object-oriented design. I keep learning by shipping projects, from web apps to desktop tools.</p>
+                <ul class="checklist">
+                    <li>Frontend development with React and HTML/CSS</li>
+                    <li>Responsive and accessible UI design</li>
+                    <li>REST API with Node.js and Express</li>
+                    <li>AI-assisted development workflows</li>
+                    <li>Algorithms and data structures</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <!-- Shared footer -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p class="footer-name">Tayyaba Zubaid</p>
+            <p class="continue">Thanks for playing. Press <a href="contact.html">Get In Touch</a> to continue.</p>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <p>&copy; 2026 Tayyaba Zubaid. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
