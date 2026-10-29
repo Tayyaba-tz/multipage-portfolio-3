@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tayyaba-portfolio-3vercel.app/sitemap.xml
+Sitemap: https://tayyaba-portfolio-3.vercel.app/sitemap.xml
