@@ -6,8 +6,6 @@ A multi-page, game-themed portfolio website for Tayyaba Zubaid, a Frontend Engin
 
 **Vercel:** https://portfolio-3-seven-xi.vercel.app/
 
-> Replace the link above with your deployed URL once it is live.
-
 ## Pages
 
 | Page | File | What it shows |
@@ -58,7 +56,7 @@ portfolio/
 │   └── main.js
 ├── assets/
 │   ├── Tayyaba_Zubaid_CV.pdf
-│   └── profile.png        (add your own photo)
+│   └── profile.png 
 └── README.md
 ```
 
@@ -126,5 +124,7 @@ Current versions of Chrome, Edge, Firefox and Safari.
 - Email: tayyabazubaid@gmail.com
 - LinkedIn: [tayyaba-zubaid](https://www.linkedin.com/in/tayyaba-zubaid/)
 - GitHub: [Tayyaba-tz](https://github.com/Tayyaba-tz)
+
+## Prompts Used
 
 &copy; 2026 Tayyaba Zubaid. All rights reserved.
