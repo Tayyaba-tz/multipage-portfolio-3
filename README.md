@@ -4,7 +4,7 @@ A multi-page, game-themed portfolio website for Tayyaba Zubaid, a Frontend Engin
 
 ## Live Site
 
-**Vercel:** https://portfolio-3-seven-xi.vercel.app/
+**Vercel:** https://tayyaba-portfolio-3.vercel.app/
 
 ## Pages
 
@@ -29,7 +29,7 @@ A multi-page, game-themed portfolio website for Tayyaba Zubaid, a Frontend Engin
 ## Tech Stack
 
 - HTML5, CSS3, vanilla JavaScript
-- Google Fonts: **Syne** (headings) and **Inter** (body)
+- Google Fonts: **Inter** (one simple, readable font for everything)
 
 ## Color Palette
 
@@ -45,18 +45,19 @@ A multi-page, game-themed portfolio website for Tayyaba Zubaid, a Frontend Engin
 
 ```
 portfolio/
-├── index.html
-├── about.html
-├── skills.html
-├── projects.html
-├── contact.html
-├── css/
-│   └── style.css
-├── js/
-│   └── main.js
+├── index.html, about.html, skills.html, projects.html, contact.html
+├── 404.html               (custom "page not found" screen)
+├── css/style.css
+├── js/main.js
 ├── assets/
 │   ├── Tayyaba_Zubaid_CV.pdf
-│   └── profile.png 
+│   ├── profile.png / profile.webp   (photo + optimized copy)
+│   ├── og-image.png                 (social share preview)
+│   └── favicon.svg
+├── partials/              (header.html and footer.html: the single source for navbar and footer)
+├── tools/sync_layout.py   (copies the partials into every page)
+├── robots.txt, sitemap.xml
+├── vercel.json            (security and cache headers)
 └── README.md
 ```
 
@@ -86,7 +87,7 @@ Then visit `http://localhost:8000`.
 - **Projects:** edit the cards in `projects.html`. Set `data-category` to one of `Web Design`, `Desktop App` or `Console-based` so the filter works.
 - **Skills:** add or remove `<li class="slot">` items in `skills.html`.
 - **Colors and spacing:** change the variables at the top of `css/style.css`.
-- **Navbar and footer:** these are repeated in each HTML file, so update all five when you change them.
+- **Navbar and footer:** edit `partials/header.html` or `partials/footer.html`, then run `python3 tools/sync_layout.py` to update every page at once.
 
 ## Projects Featured
 
@@ -102,6 +103,12 @@ Then visit `http://localhost:8000`.
 
 ## Deploy
 
+### Vercel
+
+1. Push the project to GitHub and import the repository in Vercel.
+2. Leave the framework preset as **Other**, with no build command and no output directory.
+3. Deploy. Vercel reads `vercel.json` for the security headers.
+
 ### Netlify
 
 1. Push the project to a GitHub repository.
@@ -114,6 +121,29 @@ Then visit `http://localhost:8000`.
 1. Push the project to GitHub.
 2. Open **Settings**, then **Pages**.
 3. Choose the `main` branch and the root folder, then save.
+
+## SEO
+
+- Unique title and description on every page, canonical URLs, Open Graph and Twitter share tags, and a Person structured-data block on the home page.
+- `robots.txt` and `sitemap.xml` are included. If you change your domain, search and replace `https://portfolio-3-seven-xi.vercel.app` in the HTML files, `sitemap.xml` and `robots.txt`.
+- After deploying, submit `sitemap.xml` in Google Search Console.
+
+## Accessibility
+
+- Skip-to-content link, one `h1` per page, labelled landmarks, visible keyboard focus and descriptive link names (for example "Deenify on GitHub").
+- Text contrast meets WCAG AA. Animations switch off for visitors who prefer reduced motion.
+- On touch screens, project details are always visible because there is no hover.
+
+## Security
+
+- Content Security Policy (meta tag in every page and the full version in `vercel.json`), plus `X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`, `Permissions-Policy` and HSTS headers.
+- External links use `rel="noopener noreferrer"`. No inline scripts or styles, and no user data is collected. Only the coin total is stored locally in the browser.
+
+## Maintenance
+
+- Colors, spacing and the font live in the variables at the top of `css/style.css`.
+- Add a new project by copying an existing project card in `projects.html` and editing it. Projects live on one page, so `sitemap.xml` does not change.
+- Files use LF line endings (`.gitattributes`, `.editorconfig`).
 
 ## Browser Support
 
