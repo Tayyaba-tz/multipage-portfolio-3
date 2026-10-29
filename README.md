@@ -157,4 +157,113 @@ Current versions of Chrome, Edge, Firefox and Safari.
 
 ## Prompts Used
 
+**Prompt 1:** Multi-Page Portfolio Website
+
+Build a complete, fully coded multi-page portfolio website for Tayyaba Zubaid using only HTML5, CSS3, and vanilla JavaScript. Each section of the portfolio lives on its own separate HTML page.
+
+Color scheme: 
+#E6A5CD, 
+#E81760, 
+#F0A01D, 
+#000000, 
+#FFFFFF
+
+Font: Syne for headings, Inter for body text. Load both from Google Fonts.
+
+File structure:
+
+index.html
+about.html
+skills.html
+projects.html
+contact.html
+css/style.css
+js/main.js
+assets/ (for images, icons, CV)
+
+Design requirements:
+
+Modern, clean, and visually appealing look consistent across all pages.
+Every page must feel like part of the same website. Same fonts, colors, spacing, and component styles throughout.
+Use the color scheme meaningfully. 
+#E81760 for primary buttons and highlights, 
+#F0A01D for accents and badges, 
+#E6A5CD for soft backgrounds and decorative elements, 
+#000000 and 
+#FFFFFF for text and contrast.
+
+Shared elements across all pages:
+
+The exact same navbar on every page. Active nav link highlighted based on which page is open, handled in JS using a data-page attribute on the body or a per-page class.
+The exact same footer on every page.
+All pages link to the same css/style.css and js/main.js.
+
+Pages to build:
+
+index.html — Home
+Badge “Frontend Engineer”. Large bold heading “TAYYABA ZUBAID”. Description about being a Frontend Engineering Intern at FlyRank and CS student at Qarshi University, building AI-assisted full-stack apps. Location badge: Lahore, Pakistan. Get In Touch button linking to contact.html. 4 animated stats on load: Projects (8+), Experience (2+), Certificates (3+), Technologies (10+). Floating tech logo blobs in the background.
+
+about.html — About
+Two column layout. Left: profile image with decorative blob and experience badge “2+ Years”. Right: label “About Me”, heading “Who I am?”, two short paragraphs, checklist: Frontend development with React and HTML/CSS, Responsive and accessible UI design, REST API with Node.js and Express, AI-assisted development workflows, Algorithms and data structures.
+
+skills.html — Skills
+Label “Expertise”, heading “Technical Skills”. Skill bars organized into 4 groups with category headings. All bars animate by filling left to right on page load. No percentage numbers anywhere on any bar.
+
+Languages: JavaScript, Python, C++, Java, SQL
+Frontend: HTML5, CSS3, React, Vite, React Router, Responsive Design
+Backend: Node.js, Express.js, JWT Authentication, REST API Design
+Tools: Git, GitHub, VS Code, Vercel, Render
+
+projects.html — Projects
+Label “Portfolio”, heading “Featured Projects”. Filter buttons: All, Web Design, Desktop App, Console-based. Responsive project card grid. On hover, smooth overlay shows: category tag, title, description, tech stack, GitHub button, and Live View button where available. All 7 projects included with correct categories and tech stacks as listed in the table below.
+
+Project	Category	Tech	GitHub	Live
+Deenify	Web Design	HTML5, CSS3	Yes	Yes
+FinTrack	Desktop App	Java, Java Swing, OOP	Yes	No
+Pokemon Encyclopedia	Web Design	HTML5, CSS3, JS, PokeAPI	Yes	Yes
+Weather Dashboard	Web Design	HTML5, CSS3, JS	Yes	Yes
+Evacuation Planner	Console-based	C++, Dijkstra’s, Segment Tree	Yes	No
+Tomzora Image Gallery	Web Design	JS, Unsplash API	Yes	Yes
+Hybrid Sorting	Desktop App	Python, CustomTkinter, Matplotlib	Yes	No
+
+contact.html — Contact
+Label “Contact”, heading “Let’s Work Together”. 3 contact cards: Email (tayyabazubaid@gmail.com), LinkedIn (tayyaba-zubaid), GitHub (Tayyaba-tz). Footer below.
+
+JavaScript functionality:
+
+Active nav link detection per page on load.
+Hamburger menu works on all pages.
+Smooth fade-in animation on every page load.
+Project filter buttons on projects.html show and hide cards by category.
+Stat counter animation on index.html on page load.
+Skill bars animate on skills.html page load. No numbers shown.
+All internal links point to the correct .html files.
+
+Standards:
+
+Fully responsive on mobile (360px and above), tablet, and desktop.
+Semantic HTML5 throughout.
+No inline styles. All styling in style.css.
+Clean, well-commented code in all files.
+
+Deliver the complete working code for all 5 HTML files, css/style.css, and js/main.js.
+
+**Prompt 2:**
+
+Add animations and make the portfolio look like a game as perfect as possible
+
+**Prompt 3:**
+
+Fix the issue in the hero-title so that it could display in 2 lines
+
+**Prompt 4:**
+
+Do the following fixes and edits in the uploaded edited zip:
+
+1. Change font style. Use simple font and increase font size. Decrease the font size of the hero title and increase the remaining font size as they are too small to read
+2. In backend section, the JWT is not fitting in the box. Fix it
+3. Check complete responsiveness, SEO optimization, accessibility, security, maintenance
+
+**Prompt 5:**
+
 &copy; 2026 Tayyaba Zubaid. All rights reserved.
