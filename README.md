@@ -264,6 +264,6 @@ Do the following fixes and edits in the uploaded edited zip:
 2. In backend section, the JWT is not fitting in the box. Fix it
 3. Check complete responsiveness, SEO optimization, accessibility, security, maintenance
 
-**Prompt 5:**
+--------
 
 &copy; 2026 Tayyaba Zubaid. All rights reserved.
